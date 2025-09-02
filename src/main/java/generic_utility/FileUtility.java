@@ -23,40 +23,26 @@ public class FileUtility {
 		return value;
 	}
 
-	public String getStringDataFromExcelFile(String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
+	public String getStringDataFromExcelFile(String sheetName, int rowNum, int cellNum)
+			throws EncryptedDocumentException, IOException {
 		FileInputStream fis2 = new FileInputStream(
 				"D:\\Selenium Qspider\\vtiger-crm-framework-A11\\src\\test\\resources\\testScriptData.xlsx");
-		Workbook wb=WorkbookFactory.create(fis2);
-		Sheet sh=wb.getSheet(sheetName);
-		
-		String value1=sh.getRow(rowNum).getCell(cellNum).getStringCellValue();
+		Workbook wb = WorkbookFactory.create(fis2);
+		Sheet sh = wb.getSheet(sheetName);
+
+		String value1 = sh.getRow(rowNum).getCell(cellNum).getStringCellValue();
 		return value1;
 	}
-	
-	public int getNumericDataFromExcelFile(String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
-		FileInputStream fis3=new FileInputStream("D:\\Selenium Qspider\\vtiger-crm-framework-A11\\src\\test\\resources\\testScriptData.xlsx");
-		Workbook wb=WorkbookFactory.create(fis3);
-		Sheet sh=wb.getSheet(sheetName);
-		
-		int value=(int) sh.getRow(rowNum).getCell(cellNum).getNumericCellValue();
+
+	public int getNumericDataFromExcelFile(String sheetName, int rowNum, int cellNum)
+			throws EncryptedDocumentException, IOException {
+		FileInputStream fis3 = new FileInputStream(
+				"D:\\Selenium Qspider\\vtiger-crm-framework-A11\\src\\test\\resources\\testScriptData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis3);
+		Sheet sh = wb.getSheet(sheetName);
+
+		int value = (int) sh.getRow(rowNum).getCell(cellNum).getNumericCellValue();
 		return value;
-	}
-
-	// main Method
-	public static void main(String[] args) throws IOException {
-		FileUtility fUtil = new FileUtility();
-
-		// method call for getDatafromproperties file
-//		String result = fUtil.getDataFromPropertiesFile("url");
-//		System.out.println(result);
-		
-		//method call for getStringDatafrom Excel file
-//		String result=fUtil.getStringDataFromExcelFile("Sruti", 2, 0);
-//		System.out.println(result);
-		
-		//method call for getNumericDatafrom Excel file
-		int result=fUtil.getNumericDataFromExcelFile("Sruti", 2, 1);
-		System.out.println(result);
 	}
 
 }
