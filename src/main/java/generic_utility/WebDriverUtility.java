@@ -16,6 +16,9 @@ public class WebDriverUtility {
 		this.act = new Actions(driver);
 	}
 
+	
+//Actions Class method	
+	
 	// hover
 	public void hover(WebElement element) {
 		act.moveToElement(element).build().perform();
@@ -31,11 +34,11 @@ public class WebDriverUtility {
 
 	// Click method
 	public void click() {
-		act.contextClick().build().perform();
+		act.click().build().perform();
 	}
 
 	public void click(WebElement element) {
-		act.contextClick(element).build().perform();
+		act.click(element).build().perform();
 	}
 
 	// right click
