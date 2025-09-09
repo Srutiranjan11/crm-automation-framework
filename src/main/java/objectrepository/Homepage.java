@@ -13,9 +13,23 @@ public class Homepage {
 	
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
-
+	
+	@FindBy(css = "img[src='themes/softed/images/user.PNG']")
+	private WebElement profile;
+	
+	@FindBy(linkText = "Sign Out")
+	private WebElement signOut;
+	
 	public WebElement getOrgLink() {
 		return orgLink;
+	}
+
+	public WebElement getProfile() {
+		return profile;
+	}
+	
+	public WebElement getSignOut() {
+		return signOut;
 	}
 	
 	
