@@ -1,12 +1,14 @@
 package testngextra;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Demo1 {
 
 	@Test
 	public void case1() {
-		System.out.println("This is case 1 ....");
+		Reporter.log("This is case 1");
+//		System.out.println("This is case 1 ....");
 	}
 
 	@Test
