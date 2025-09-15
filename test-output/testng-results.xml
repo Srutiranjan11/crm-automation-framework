@@ -1,77 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[This is Regression testing]]>
+    </line>
+    <line>
+      <![CDATA[This is Regression testing]]>
+    </line>
+    <line>
+      <![CDATA[This is Regression testing]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-09-15T23:03:30 IST" name="Default suite" finished-at="2025-09-15T23:04:13 IST" duration-ms="42839">
+  <suite started-at="2025-09-16T01:14:59 IST" name="Suite" finished-at="2025-09-16T01:14:59 IST" duration-ms="73">
     <groups>
+      <group name="regression">
+        <method signature="Demo4Test.case5()[pri:0, instance:typesOfExecution.Demo4Test@f78a47e]" name="case5" class="typesOfExecution.Demo4Test"/>
+        <method signature="Demo5Test.case7()[pri:0, instance:typesOfExecution.Demo5Test@738dc9b]" name="case7" class="typesOfExecution.Demo5Test"/>
+        <method signature="Demo5Test.case8()[pri:0, instance:typesOfExecution.Demo5Test@738dc9b]" name="case8" class="typesOfExecution.Demo5Test"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-09-15T23:03:30 IST" name="Default test" finished-at="2025-09-15T23:04:13 IST" duration-ms="42839">
-      <class name="testngextra.SauceDemo">
-        <test-method signature="sauceDemoLogin(java.lang.String,java.lang.String)[pri:0, instance:testngextra.SauceDemo@6d4d66d2]" started-at="2025-09-15T23:03:30 IST" name="sauceDemoLogin" data-provider="getData" finished-at="2025-09-15T23:03:41 IST" duration-ms="10806" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-09-16T01:14:59 IST" name="Test" finished-at="2025-09-16T01:14:59 IST" duration-ms="73">
+      <class name="typesOfExecution.Demo4Test">
+        <test-method signature="case5()[pri:0, instance:typesOfExecution.Demo4Test@f78a47e]" started-at="2025-09-16T01:14:59 IST" name="case5" finished-at="2025-09-16T01:14:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[This is Regression testing]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- sauceDemoLogin -->
-        <test-method signature="sauceDemoLogin(java.lang.String,java.lang.String)[pri:0, instance:testngextra.SauceDemo@6d4d66d2]" started-at="2025-09-15T23:03:41 IST" name="sauceDemoLogin" data-provider="getData" finished-at="2025-09-15T23:03:50 IST" duration-ms="8801" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- case5 -->
+      </class> <!-- typesOfExecution.Demo4Test -->
+      <class name="typesOfExecution.Demo5Test">
+        <test-method signature="case7()[pri:0, instance:typesOfExecution.Demo5Test@738dc9b]" started-at="2025-09-16T01:14:59 IST" name="case7" finished-at="2025-09-16T01:14:59 IST" duration-ms="10" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[This is Regression testing]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- sauceDemoLogin -->
-        <test-method signature="sauceDemoLogin(java.lang.String,java.lang.String)[pri:0, instance:testngextra.SauceDemo@6d4d66d2]" started-at="2025-09-15T23:03:50 IST" name="sauceDemoLogin" data-provider="getData" finished-at="2025-09-15T23:04:00 IST" duration-ms="9769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- case7 -->
+        <test-method signature="case8()[pri:0, instance:typesOfExecution.Demo5Test@738dc9b]" started-at="2025-09-16T01:14:59 IST" name="case8" finished-at="2025-09-16T01:14:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[This is Regression testing]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- sauceDemoLogin -->
-        <test-method signature="sauceDemoLogin(java.lang.String,java.lang.String)[pri:0, instance:testngextra.SauceDemo@6d4d66d2]" started-at="2025-09-15T23:04:00 IST" name="sauceDemoLogin" data-provider="getData" finished-at="2025-09-15T23:04:13 IST" duration-ms="13374" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sauceDemoLogin -->
-      </class> <!-- testngextra.SauceDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- case8 -->
+      </class> <!-- typesOfExecution.Demo5Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
