@@ -1,8 +1,6 @@
 package testngextra;
 
 import java.time.Duration;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +10,7 @@ import extraobjectrepository.LoginpageFaceBook;
 
 public class LoginFacebookTestNg {
 	
-	@Test
+	@Test(invocationCount = 2)
 	public void loginFaceBook() throws InterruptedException {
 		
 		WebDriver driver=new ChromeDriver();
